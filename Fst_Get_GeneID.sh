@@ -1,4 +1,4 @@
-# Get Fst with 10k window or  Get Fst with POPgenWindows,different seps with two methods
+# Get Fst with 10k window or  Get Fst with POPgenWindows,different seps between two methods
 vcftools --vcf All.vcf --weir-fst-pop POP1.txt --weir-fst-pop POP2.txt --fst-window-size 10000 --out POP1_POP2_Fst_10k
 # Get per windows > 10 SNPs
 awk -F ',' '$5 >= 10' POP1_POP2.10k.5k.Fst.csv  > filtered_POP1_POP2.10k.5k.Fst.csv 
